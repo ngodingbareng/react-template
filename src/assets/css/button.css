@@ -1,0 +1,89 @@
+.button {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  padding: 8px 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-group {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  padding: 8px 10px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-hapus {
+  font-size: 12px;
+  padding: 8px 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: auto;
+  float: right;
+  text-decoration: none;
+}
+
+.button-hapus-group {
+  font-size: 12px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: auto;
+  float: right;
+}
+
+.button-primary {
+  color: #fff;
+  background-color: rgb(0, 185, 161);
+}
+
+.button-primary:hover {
+  color: #fff;
+  background-color: rgba(0, 165, 143, 0.836);
+}
+
+.button-danger {
+  color: #fff;
+  background-color: rgb(228, 74, 74);
+}
+
+.button-danger:hover {
+  color: #fff;
+  background-color: rgba(228, 74, 74, 0.788);
+}
+
+.button-default {
+  color: rgb(34, 34, 34);
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.button-default:hover {
+  color: rgb(34, 34, 34);
+  background-color: rgba(204, 204, 204, 0.863);
+}
+
+.button-dark {
+  color: #fff;
+  background-color: rgb(39, 39, 39);
+}
+
+.button-dark:hover {
+  color: #fff;
+  background-color: rgb(59, 59, 59);
+}
