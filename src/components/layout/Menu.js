@@ -5,14 +5,11 @@ class Menu extends Component {
   render() {
     return (
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link to="/">Home</Link>
-        </li>
         <li className="dropdown-nav">
-          <a className="dropdown-nav-btn">Users</a>
+          <a className="dropdown-nav-btn">Nama <i className="arrow-down"></i></a>
           <div className="dropdown-nav-content">
-            <Link to="/users">Data Users</Link>
-            <Link to="/user/add">Tambah User</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/logout">Logout</Link>
           </div>
         </li>
       </ul>

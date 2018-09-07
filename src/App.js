@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import NotFound from "./components/pages/NotFound";
-import Home from "./components/pages/Home";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./components/layout/Header";
+import Sidebar from "./components/layout/Sidebar";
+import Container from "./components/layout/Container";
 // import Modal from './components/layout/Modal';
-
-import Users from "./components/users/Users";
-import UserInsert from "./components/users/UserInsert";
-import UserEdit from "./components/users/UserEdit";
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -29,16 +24,9 @@ class App extends Component {
         <Router>
           <div className="App">
             {/* <Modal /> */}
-            <Header branding="React Personal Example" />
-            <div className="container">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/users" component={Users} />
-                <Route exact path="/user/add" component={UserInsert} />
-                <Route exact path="/user/edit/:id" component={UserEdit} />
-                <Route component={NotFound} />
-              </Switch>
-            </div>
+            <Header />
+            <Sidebar branding="React Example" />
+            <Container />
           </div>
         </Router>
       </Provider>

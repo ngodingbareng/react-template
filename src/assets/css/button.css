@@ -55,6 +55,8 @@
 .button-primary:hover {
   color: #fff;
   background-color: rgba(0, 165, 143, 0.836);
+  transition: 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
 }
 
 .button-danger {
@@ -65,6 +67,8 @@
 .button-danger:hover {
   color: #fff;
   background-color: rgba(228, 74, 74, 0.788);
+  transition: 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
 }
 
 .button-default {
@@ -76,6 +80,8 @@
 .button-default:hover {
   color: rgb(34, 34, 34);
   background-color: rgba(204, 204, 204, 0.863);
+  transition: 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
 }
 
 .button-dark {
@@ -86,4 +92,6 @@
 .button-dark:hover {
   color: #fff;
   background-color: rgb(59, 59, 59);
+  transition: 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
 }
