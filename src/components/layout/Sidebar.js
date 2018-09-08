@@ -1,32 +1,51 @@
-import React from "react";
+import React, { Component } from "react";
 import MenuSidebar from "./MenuSidebar";
-import PropTypes from "prop-types";
-import Logo from "../../assets/images/logo.png";
+import Brand from "./Brand";
 
-const Sidebar = props => {
-  const { branding } = props;
+class Sidebar extends Component {
+  state = {
+    toggleNav: false
+  };
 
-  return (
-    <div>
-      <nav className="sidebar">
-        <a href="/" className="sidebar-brand">
-          <img src={Logo} alt={branding} />
-          <div>{branding}</div>
-        </a>
-        <div className="container-sidebar">
-          <MenuSidebar />
+  openToggleNav = e => {
+    this.setState({
+      toggleNav: !this.state.toggleNav
+    });
+  };
+  render() {
+    const { toggleNav } = this.state;
+  
+    return (
+      <div>
+        <div className="sidebar-default">
+          <nav className="sidebar">
+            <Brand branding="React Template" />
+            <div className="container-sidebar">
+              <MenuSidebar />
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-  );
-};
-
-Sidebar.defaultProps = {
-  branding: "My App"
-};
-
-Sidebar.propTypes = {
-  branding: PropTypes.string.isRequired
+        {toggleNav ? (
+          <div className="sidebar-media">
+            <nav className="sidebar">
+              <a className="sidebar-btn sidebar-open" onClick={this.openToggleNav}>
+                &#9776;
+              </a>
+              <div className="container-sidebar">
+                <MenuSidebar />
+              </div>
+            </nav>
+          </div>
+        ) : (
+          <div className="sidebar-media">
+            <a className="sidebar-btn sidebar-close" onClick={this.openToggleNav}>
+              &#9776;
+            </a>
+          </div>
+        )}
+      </div>
+    );
+  }
 };
 
 export default Sidebar;

@@ -4,53 +4,97 @@
     padding-right: 2%;
   }
 
+  .container-sidebar {
+    margin-top: 0px;
+  }
+
   .container {
-    padding-top: 60px;
+    padding-top: 109px;
     padding-left: 2%;
     padding-right: 4%;
     padding-bottom: 2%;
   }
 
-  .nav-default {
-    display: none;
+  .navbar-nav .dropdown-nav .dropdown-nav-content a {
+    padding-left: 30px;
   }
-  
-  .nav-media {
+
+  .navbar {
+    margin-top: 49px;
+    margin-left: 0px;
+  }
+
+  .tutup {
     display: block;
   }
 
-  .btn-nav {
-    height: 19px;
-    display: initial;
-    float: right;
+  .sidebar-btn {
+    color: #fff;
+    background-color: rgba(0, 165, 143, 0.705);
+    position: absolute;
+    font-size: 25px;
     padding-top: 9px;
-    margin-top: -10px;
+    padding-bottom: 8px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-top: 49px;
+    width: 43px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-animation: slideInX .6s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slideInX .6s; /* Firefox < 16 */
+    -ms-animation: slideInX .6s; /* Internet Explorer */
+    -o-animation: slideInX .6s; /* Opera < 12.1 */
+    animation: slideInX .6s;
+    transition: 0.6s;
+    transition-delay: 0s, 0s, 0.3s;
   }
 
-  .column-1 {
+  .change {
+    right: 0;
+  }
+
+  .sidebar-open {
+    right: 0;
+    margin-right: -42px;
+  }
+
+  .sidebar-close {
+    left: 0;
+  }
+
+  .sidebar-default {
+    display: none;
+  }
+
+  .sidebar-media {
+    display: block;
+  }
+
+  .sidebar-brand {
+    position: fixed;
+    display: block;
+    font-size: 16px;
     width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 50px;
+    background-color: rgb(0, 75, 65);
+    box-sizing: border-box;
   }
 
-  .column-2 {
-    width: 100%;
+  .sidebar-brand div {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-left: 0px;
   }
-
-  .column-3 {
-    width: 100%;
-  }
-
-  .column-4 {
-    width: 100%;
-  }
-
-  .dropdown-nav-content {
-    position: relative;
-    min-width: 100%;
-    background-color: rgb(1, 158, 137);
-  }
-
-  .navbar-nav .dropdown-nav .dropdown-nav-content a {
-    padding-left: 30px;
+  
+  .sidebar-brand img {
+    display: none;
   }
 }
 

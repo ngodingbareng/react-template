@@ -25,7 +25,7 @@ class App extends Component {
           <div className="App">
             {/* <Modal /> */}
             <Header />
-            <Sidebar branding="React Example" />
+            <Sidebar />
             <Container />
           </div>
         </Router>

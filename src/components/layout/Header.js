@@ -1,19 +1,17 @@
 import React from "react";
-import HeaderDefault from "./HeaderDefault";
-import HeaderMedia from "./HeaderMedia";
+import Menu from "./Menu";
+import Brand from "./Brand";
 
-const Header = props => {
+const Header = () => {
 
   return (
     <div>
+      <div className="tutup">
+        <Brand branding="React Template"  />
+      </div>
       <nav className="navbar">
         <div className="container-nav">
-          <div className="nav-default">
-            <HeaderDefault />
-          </div>
-          <div className="nav-media">
-            <HeaderMedia />
-          </div>
+          <Menu />
         </div>
       </nav>
     </div>

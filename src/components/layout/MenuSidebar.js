@@ -5,10 +5,10 @@ class MenuSidebar extends Component {
   render() {
     return (
       <ul className="sidebar-nav">
-        <li className="sidebar-title">
-          <div>MAIN MENU</div>
-        </li>
         <div className="sidebar-menu-scroll">
+          <li className="sidebar-title">
+            <div>MAIN MENU</div>
+          </li>
           <li className="sidebar-item">
             <Link to="/">Home</Link>
           </li>
