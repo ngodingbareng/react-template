@@ -1,3 +1,4 @@
+export const GET_MENU = 'GET_MENU';
 export const GET_USERS = 'GET_USERS';
 export const USER_INSERT = 'USER_INSERT';
 export const USER_DELETE = 'USER_DELETE';

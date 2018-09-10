@@ -37,7 +37,7 @@ class Sidebar extends Component {
             </nav>
           </div>
         ) : (
-          <div className="sidebar-media">
+          <div className="sidebar-media sidebar-media-close">
             <a className="sidebar-btn sidebar-close" onClick={this.openToggleNav}>
               &#9776;
             </a>

@@ -10,6 +10,7 @@ import Container from "./components/layout/Container";
 import { Provider } from "react-redux";
 import store from "./store";
 
+import "./assets/css/animation.css";
 import "./assets/css/style.css";
 import "./assets/css/responsive.css";
 import "./assets/css/table.css";
