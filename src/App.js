@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Sidebar from "./components/layout/Sidebar";
 import Container from "./components/layout/Container";
-// import Modal from './components/layout/Modal';
+import Modal from './components/layout/Modal';
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -24,7 +24,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            {/* <Modal /> */}
+            <Modal />
             <Header />
             <Sidebar />
             <Container />

@@ -1,7 +1,14 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
+import { openModal } from '../../actions/modalActions';
 
-class Users extends Component {
+class Home extends Component {
+  openModalBtn = () => {
+    this.props.openModal();
+  }
+  
   render() {
+
     return (
       <div>
         <div className="column">
@@ -12,6 +19,9 @@ class Users extends Component {
                 <p>Masih kosong</p>
                 <p>Kosong...</p>
                 <p>Astagfirullahaladzim</p>
+                <a className="button button-primary" onClick={this.openModalBtn}>
+                  Open Modal
+                </a>
               </div>
             </div>
           </div>
@@ -21,4 +31,9 @@ class Users extends Component {
   }
 }
 
-export default Users;
+export default connect(
+  null,
+  { openModal }
+)(Home);
+
+// export default Home;
